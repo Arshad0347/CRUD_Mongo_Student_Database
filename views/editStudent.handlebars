@@ -1,0 +1,56 @@
+<div class="container">
+    <h1 class="text-center text-success">Edit Student Info</h1>
+<form class="form-horizontal" action="/stu/update-student/{{student._id}}" method="post">
+<div>
+<fieldset>
+<label for="readOnlyInput" class="col-lg-2 control-label">Enter Your Name:</label>
+<input 
+type="text" 
+name="fullname" 
+class="form-control" 
+value="{{student.fullname}}"
+placeholder="Enter Your Name"/>  
+</fieldset>
+    </div>
+    
+    <div>
+<fieldset>
+<label for="readOnlyInput" class="col-lg-2 control-label">Enter Your Email:</label>
+<input 
+type="email" 
+name="email" 
+value="{{student.email}}"
+class="form-control" 
+placeholder="Enter Your Email ID"/>  
+</fieldset>
+    </div>
+
+<div>
+<fieldset>
+<label for="readOnlyInput" class="col-lg-2 control-label">Enter Your Phone:</label>
+<input 
+type="text" 
+name="phone" 
+value="{{student.phone}}"
+class="form-control" 
+placeholder="Enter Your Mobile Number"/>  
+</fieldset>
+    </div>
+
+<div>
+<fieldset>
+<label for="readOnlyInput" class="col-lg-2 control-label">Enter Your City:</label>
+<input 
+type="text" 
+name="city" 
+value="{{student.city}}"
+class="form-control" 
+placeholder="Enter Your City"/>  
+<button class="btn btn-primary mt-3" type="submit">Submit</button>
+</fieldset>
+    </div>
+
+</form>
+</div>
+
+
