@@ -1,4 +1,4 @@
-const PORT = 6600;
+require('dotenv').config()
 const express = require("express");
 const Handlebars = require("handlebars");
 const { engine } = require("express-handlebars");
@@ -6,7 +6,7 @@ const { allowInsecurePrototypeAccess } = require("@handlebars/allow-prototype-ac
 
 const app = express();
 const connectDB = require("./models/db");
-
+const PORT = process.env.PORT
 // Middleware
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
